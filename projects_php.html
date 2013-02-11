@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Karen Suda</title>
+<link rel="stylesheet" type="text/css" href="karen_suda.css" />
+<link rel="shortcut icon" href="suda_icon.png" />
+
+<style type="text/css">
+.box {
+	width:80%;
+	margin:auto;
+	text-align:left;
+	padding:15px;
+	background-color:#E0E0E0;
+}
+
+</style>
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#content").css("display", "none");
+    $("#content").fadeIn(1000);
+    $("#logo").css("display", "none");
+    $("#logo").fadeIn(1000);
+    $("a.transition").click(function(event){
+        event.preventDefault();
+        linkLocation = this.href;
+        $("#content").fadeOut(1000, redirectPage);      
+    });   
+    function redirectPage() {
+        window.location = linkLocation;
+    }
+});
+</script>
+
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.validate/1.7/jquery.validate.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$("#myform").validate({
+			debug: false,
+			rules: {
+				email: {
+					required: true,
+					email: true
+				}
+			},
+			messages: {
+				email: "Please enter a valid Email",
+			},
+			submitHandler: function(form) {
+				// do other stuff for a valid form
+				$.post('process.php', $("#myform").serialize(), function(data) {
+					$('#results').html(data);
+				});
+			}
+		});
+	});
+	</script>
+	<style type="text/css">
+	label.error { width: 250px; display: inline; color: red;}
+	</style>
+
+
+
+
+</head>
+
+<body background="white">
+	
+<!-- Banner -->
+	<div id="logo">
+		<a href="index.html"><img src="logo_karen2.png" alt="logo"/></a>
+	</div>
+
+<!-- Navigation -->
+	<div class="navigation" style="position:relative; top:20px;">
+		<a class="c_red" style="padding: 17px 30px 17px 30px;" href="index.html"> home </a>
+		<a class="c_pink" style="padding: 17px 30px 17px 30px;" href="pg_about.html"> about me </a>
+		<a class="c_orange" style="padding: 17px 30px 17px 30px;" href="pg_experience.html"> experience </a>
+		<a class="c_blue" style="padding: 17px 30px 17px 30px;" href="pg_projects.html"> projects </a>
+		<a class="c_teal" style="padding: 17px 30px 17px 30px;" href="pg_contact.html"> contact </a>
+	</div>
+	<br />
+
+<!-- Navigation for projects -->	
+	<div class="nav2" style="position:relative; top:20px; text-align: center;">
+		<a class="c_sky" style="padding: 12px" href="projects_javascript.html"> javascript </a>
+		<a class="c_sky" style="padding: 12px" href="projects_java.html"> java </a>
+		<a class="c_sky" style="padding: 12px" href="projects_flash.html"> flash animation </a>
+		<a class="c_sky" style="padding: 12px" href="projects_actionscript.html"> actionScript </a>
+		<a class="c_sky" style="padding: 12px" href="projects_php.html"> php </a>
+	</div>
+	<br />
+	
+<!-- Body content -->
+	<div id="content" style="position:relative; top:20px;">
+		<h2>PHP</h2>
+		<div class="box" style="position:relative; top:20px;">
+		<div id="news"  align="center">
+			<h3>Newsletter</h3>
+			<br />
+			<form name="myform" id="myform" action="" method="post">  
+				<label for="email" id="email_label">Email</label>
+				<input type="text" name="email" id="email" size="30" value="" /> 
+				<br />
+				<!-- The Submit button -->
+				<input type="submit" name="submit" value="Submit" /> 
+			</form>
+			<!-- Output the results from process.php here -->
+			<div id="results"></div>
+			<p>Enter your email to receive our monthly newsletters</p>
+		</div>
+		</div>
+
+		   
+		<div class="box" style="position:relative; top:50px;">
+		<div id="photo"  align="center">
+			<h3>Photo Uploader</h3>
+			<form method='post' action='uploader.php' enctype='multipart/form-data'>
+				<p>Upload a GIF Image (max file size 100KB)</p>
+				<input type='hidden' name='MAX_FILE_SIZE' value='101201' />
+				File:  <input type='file' name='upfile' /><br/>
+				<input type='submit' value='Send file' />
+			</form>
+		</div>
+		</div>
+		
+		<div class="box" style="position:relative; top:90px;">
+		<div id="cnt"  align="center">
+			<h3>Word Counting</h3>
+			<form action='ass5count.php' method='post'>
+				<p>Enter a string:</p>
+				<textarea name='input_string' rows='10' cols='60'></textarea>
+				<p><input type='submit' /></p>
+			</form>
+		</div>
+		</div>
+		
+		<div class="box" style="position:relative; top:130px;">
+		<div id="mult"  align="center">
+			<h3>Multiplication Table</h3>
+			<form action='ass4mult.php' method='get'>
+			    <p>Enter size of multiplication table (1-10): <input type ='text' name='size' /></p>
+			    <p><input type='submit' /></p>
+			</form>
+		</div>
+		</div>
+		
+		
+	<div class="footer"></div>
+	<div class="footer"></div>
+	<div class="footer"></div>
+	<div class="footer"></div>
+	
+	</div>
+<div class="footer"></div>
+
+	
+</body>
+</html>

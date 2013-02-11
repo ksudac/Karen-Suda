@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Karen Suda</title>
+<link rel="stylesheet" type="text/css" href="karen_suda.css" />
+<link rel="shortcut icon" href="suda_icon.png" />
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#content").css("display", "none");
+    $("#content").fadeIn(1000);
+    $("#logo").css("display", "none");
+    $("#logo").fadeIn(1000);
+    $("a.transition").click(function(event){
+        event.preventDefault();
+        linkLocation = this.href;
+        $("#content").fadeOut(1000, redirectPage);      
+    });   
+    function redirectPage() {
+        window.location = linkLocation;
+    }
+});
+</script>
+
+</head>
+
+<body background="white">
+	
+<!-- Banner -->
+	<div id="logo">
+		<a href="index.html"><img src="logo_karen2.png" alt="logo"/></a>
+	</div>
+
+<!-- Navigation -->
+	<div class="navigation" style="position:relative; top:20px;">
+		<a class="c_red" style="padding: 17px 30px 17px 30px;" href="index.html"> home </a>
+		<a class="c_pink" style="padding: 17px 30px 17px 30px;" href="pg_about.html"> about me </a>
+		<a class="c_orange" style="padding: 17px 30px 17px 30px;" href="pg_experience.html"> experience </a>
+		<a class="c_blue" style="padding: 17px 30px 17px 30px;" href="pg_projects.html"> projects </a>
+		<a class="c_teal" style="padding: 17px 30px 17px 30px;" href="pg_contact.html"> contact </a>
+	</div>
+	<br />
+
+<!-- Navigation for projects -->	
+	<div class="nav2" style="position:relative; top:20px; text-align: center;">
+		<a class="c_sky" style="padding: 12px" href="projects_javascript.html"> javascript </a>
+		<a class="c_sky" style="padding: 12px" href="projects_java.html"> java </a>
+		<a class="c_sky" style="padding: 12px" href="projects_flash.html"> flash animation </a>
+		<a class="c_sky" style="padding: 12px" href="projects_actionscript.html"> actionScript </a>
+		<a class="c_sky" style="padding: 12px" href="projects_php.html"> php </a>
+	</div>
+	<br />
+	
+<!-- Body content -->
+	<div id="content" style="position:relative; top:20px;">	
+		<h2>Java Applications - Click Launch to Play!</h2>
+			<p> Drawing Fun with Paint - Select a Color to Draw </p>
+			<!-- ... -->
+			<script src="http://www.java.com/js/deployJava.js"></script>
+			<script>
+				// using JavaScript to get location of JNLP file relative to HTML page	
+				var dir = location.href.substring(0,
+				location.href.lastIndexOf('/')+1);
+				var url = "http://hills.ccsf.edu/~ksudaced/home/Drawing.JNLP";
+				deployJava.createWebStartLaunchButton(url, '1.6.0');
+			</script>
+			<!-- ... -->
+			
+			<p> Rock Paper Scissor Game - Place a Bet and Select Rock, Paper or Scissors </p>
+			<!-- ... -->
+			<script src="http://www.java.com/js/deployJava.js"></script>
+			<script>
+				var dir = location.href.substring(0,
+				location.href.lastIndexOf('/')+1);
+				var url = "http://hills.ccsf.edu/~ksudaced/home/RockPaperScissors.JNLP";
+				deployJava.createWebStartLaunchButton(url, '1.6.0');
+			</script>
+			<!-- ... -->
+			<br /><br />
+			
+	<div class="footer"></div>
+	Note: Chrome on the Mac platform does not support Java 7
+	<br />
+	</div>
+	
+</body>
+</html>

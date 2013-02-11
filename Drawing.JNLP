@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="http://hills.ccsf.edu/~ksudaced/home" href="Drawing.JNLP">
+   
+    <information>
+        <title>Drawing</title>
+        <vendor>Karen Suda</vendor>
+        <icon href="http://hills.ccsf.edu/~ksudaced/home/drawLogo.jpg"/>
+        <offline-allowed/>
+    </information>
+    
+    
+    <resources>
+        <j2se version="1.6+" href= "http://java.sun.com/products/autodl/j2se"/>
+        <jar href="http://hills.ccsf.edu/~ksudaced/home/Drawing.jar" main="true"/>
+    </resources>
+    
+    <application-desc
+         name="Drawing"
+         main-class="Drawing">
+     </application-desc>
+
+</jnlp>

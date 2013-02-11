@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Karen Suda</title>
+<link rel="stylesheet" type="text/css" href="karen_suda.css" />
+<link rel="shortcut icon" href="suda_icon.png" />
+
+<script type="text/javascript" src="swfobject.js"></script>
+<script type="text/javascript">
+swfobject.embedSWF("drawing.swf", "drawing", "100%", "100%", "9.0.0");
+</script>
+
+<script type="text/javascript">
+swfobject.embedSWF("ecard.swf", "ecard", "640", "480", "9.0.0");
+</script>
+
+<script type="text/javascript">
+swfobject.embedSWF("banner.swf", "banner", "468", "60", "9.0.0");
+</script>
+
+<script type="text/javascript">
+swfobject.embedSWF("Crabby.swf", "Crabby", "550", "400", "9.0.0");
+</script>
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#content").css("display", "none");
+    $("#content").fadeIn(1000);
+    $("#logo").css("display", "none");
+    $("#logo").fadeIn(1000);
+    $("a.transition").click(function(event){
+        event.preventDefault();
+        linkLocation = this.href;
+        $("#content").fadeOut(1000, redirectPage);      
+    });   
+    function redirectPage() {
+        window.location = linkLocation;
+    }
+});
+</script>
+
+</head>
+
+<body background="white">
+	
+<!-- Banner -->
+	<div id="logo">
+		<a href="index.html"><img src="logo_karen2.png" alt="logo"/></a>
+	</div>
+
+<!-- Navigation -->
+	<div class="navigation" style="position:relative; top:20px;">
+		<a class="c_red" style="padding: 17px 30px 17px 30px;" href="index.html"> home </a>
+		<a class="c_pink" style="padding: 17px 30px 17px 30px;" href="pg_about.html"> about me </a>
+		<a class="c_orange" style="padding: 17px 30px 17px 30px;" href="pg_experience.html"> experience </a>
+		<a class="c_blue" style="padding: 17px 30px 17px 30px;" href="pg_projects.html"> projects </a>
+		<a class="c_teal" style="padding: 17px 30px 17px 30px;" href="pg_contact.html"> contact </a>
+	</div>
+	<br />
+	
+<!-- Navigation for projects -->	
+	<div class="nav2" style="position:relative; top:20px; text-align: center;">
+		<a class="c_sky" style="padding: 12px" href="projects_javascript.html"> javascript </a>
+		<a class="c_sky" style="padding: 12px" href="projects_java.html"> java </a>
+		<a class="c_sky" style="padding: 12px" href="projects_flash.html"> flash animation </a>
+		<a class="c_sky" style="padding: 12px" href="projects_actionscript.html"> actionScript </a>
+		<a class="c_sky" style="padding: 12px" href="projects_php.html"> php</a>
+	</div>
+	<br />
+	
+<!-- Body content -->
+	<div id="content" style="position:relative; top:20px;">	
+
+		<h2>Flash Animation</h2>
+			<p>Drawing - The character on left is a downloaded raster (pixel) image.<br />
+			I recreated the character on the right as a vector image. Click to enlarge.</p>
+			<a href="drawing.swf" target="_blank"><img src="small_drawing.jpg" title="Click for a larger image" alt="drawing"/></a>
+			<br /><br />
+			<p>Ecard - I used the same character to create a e-card. All aspects of the card were drawn and animated in Flash. </p>
+			<div id="ecard"><p>Ecard</p></div>
+			<br /><br />
+			<p>Banner - I also used the character to create a banner ad with a file size of 38 KB. </p>
+			<div id="banner"><p>banner</p></div>
+			<div class="footer"></div> 
+		
+	</div>
+	<div class="footer"></div> 
+</body>
+</html>
