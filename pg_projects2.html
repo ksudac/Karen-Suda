@@ -4,29 +4,42 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <title>Karen Suda</title>
-
-<style type="text/css">
-div.panel1,p.flip1,div.panel2,p.flip2  {
-font-family:"Tahoma", Geneva, sans-serif;
-margin:0px;
-padding:5px;
-text-align:center;
-font-size:40px;
-color: #3F73BE;
-border:none;
-}
-div.panel1,div.panel2 {
-height:60px;
-display:none;
-}
-</style>
-
 <link rel="stylesheet" type="text/css" href="css/karen_suda.css" />
 <link rel="shortcut icon" href="images/suda_icon.png" />
+
+<script type="text/javascript" src="js/jquery.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#content").css("display", "none");
+    $("#content").fadeIn(1000);
+    $("a.transition").click(function(event){
+        event.preventDefault();
+        linkLocation = this.href;
+        $("#content").fadeOut(1000, redirectPage);      
+    });   
+    function redirectPage() {
+        window.location = linkLocation;
+    }
+});
+</script>
+
+<script type="text/javascript">
+    
+function showmenu(elmnt){
+document.getElementById(elmnt).style.visibility="visible";
+}
+function hidemenu(elmnt){
+document.getElementById(elmnt).style.visibility="hidden";
+}
+
+</script>
+
+
 </head>
 
 <body background="white">
-
+	
 <!-- Banner -->
 	<div id="logo">
 		<a href="index.html"><img src="images/logo_karen2.png" alt="logo" height="59" width="320"/></a>
@@ -52,62 +65,17 @@ display:none;
 		<a class="c_teal" style="padding: 17px 30px 17px 30px;margin-left: -5px;" href="pg_contact.html"> contact </a>
 	</div>
 	<br />
+	
 
 <!-- Body content -->
-	<div id="content">
-	<br />
-	<img src="images/phone.png" alt="phone_icon" class="flip1" />
-	<a href="mailto:ksudac@gmail.com"><img src="images/gmail.png" alt="gmail_icon" class="flip2" /></a>
-	<br />
-	<a href="http://www.linkedin.com/pub/karen-suda-cederquist/18/320/303" target="_blank"><img src="images/linkedin.png" alt="linkedin_icon"/></a>
-	<a href="http://letslunch.com/public/3303490/Karen-Suda-Cederquist" target="_blank"> <img src="images/lunch.png" alt="lunch_icon" /></a>
-	<a href="https://www.facebook.com/k.sudacederquist" target="_blank"><img src="images/facebook.png" alt="facebook_icon" /></a>
-	<br />
-	<div class="panel1">(415) 913-8282</div>
-	<div class="panel2">ksudac@gmail.com</div>
-	<br />
+	<div id="content" style="position:relative; top:20px;">	<br />
+		<a href="projects_javascript.html" style="padding: 20px"> <img src="images/javascript.png" alt="javascript_icon"/></a>
+		<a href="projects_java.html" style="padding: 20px"><img src="images/java.png" alt="java_icon"/></a>
+		<a href="projects_php.html" style="padding: 20px"><img src="images/php.png" alt="php_icon"/></a><br /><br />
+		<a href="projects_flash.html" style="padding: 20px"><img src="images/flash.png" alt="flash_icon"/></a>
+		<a href="projects_actionscript.html" style="padding: 20px"><img src="images/action.png" alt="action_icon"/></a><br />
+	<div class="footer"></div>
 	</div>
 
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript">
-$(document).ready(function() {
-    $("#content").css("display", "none");
-    $("#content").fadeIn(1000);
-    $("a.transition").click(function(event){
-        event.preventDefault();
-        linkLocation = this.href;
-        $("#content").fadeOut(1000, redirectPage);      
-    });   
-    function redirectPage() {
-        window.location = linkLocation;
-    }
-});
-</script>
-
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript"> 
-$(document).ready(function(){
-$(".flip1").click(function(){
-    $(".panel1").slideToggle("slow");
-  });
-});
-$(document).ready(function(){
-$(".flip2").click(function(){
-    $(".panel2").slideToggle("slow");
-  });
-});
-</script>
-
-<script type="text/javascript">
-    
-function showmenu(elmnt){
-document.getElementById(elmnt).style.visibility="visible";
-}
-function hidemenu(elmnt){
-document.getElementById(elmnt).style.visibility="hidden";
-}
-
-</script>
-	
 </body>
 </html>

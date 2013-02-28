@@ -1,0 +1,138 @@
+html {
+background-color: white;
+overflow-y: scroll;
+height: 100%;
+}
+
+body, html{
+    background-image:url("../images/texture5.jpg");
+    background-repeat: repeat;
+    height: 100%;
+}
+
+.c_red {background-color: #D24247; }
+.c_plumb {background-color: #7C4A87; }
+.c_pink {background-color: #D24876; }
+.c_orange { background-color: #E5A341;}
+.c_blue {background-color: #3F73BE; }
+.c_teal {background-color: #6EAC9D; }
+.c_sky {background-color: #70B7E0; }
+
+.c_gray {background-color: #2D2D2D; }
+
+.c_dark_teal {background-color: #7ABABB; }
+.c_light_orange {background-color: #DFB058; }
+.c_bright_orange { background-color: #D89B4C;}
+.c_red_orange {background-color: #C84636; }
+
+.c_green {background-color: #385859; }
+.c_bright_teal {background-color: #6BAAB1; }
+.c_rose {background-color: #9D4966; }
+.c_yellow {background-color: #E7C950; }
+.c_brown { background-color: #B78636;}
+
+
+a img {
+    border: 0px;
+}
+
+#logo {
+    width: 80%;
+    padding-top: 15px;
+    margin: 0em 5em;
+}
+
+.navbar {
+    height: 80px;
+    background-image:url('../images/black_pattern.jpg');
+    background-repeat: repeat;
+    z-index: 10;
+}
+
+.navigation {
+    top: 200px;
+    text-align: center;
+    width: 80%;
+    font-family:"Tahoma", Geneva, sans-serif;
+    margin: 0em 5em;
+    height: 34px;
+}
+
+.navigation a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: gray;
+    text-decoration: none;
+}
+
+.dropdown {
+    display:inline-block;
+}
+
+.menu {
+    position:absolute;
+    visibility:hidden;
+    z-index: 100;
+    top: 33px;
+}
+
+.menu_item{
+    width:114px;
+    line-height: 30px;
+    border-bottom:solid;
+    border-width:1px;
+    border-color:gray;
+    float:left;
+}
+
+.shadow {
+  -moz-box-shadow:    3px 3px 3px 1px #ccc;
+  -webkit-box-shadow: 3px 3px 3px 1px #ccc;
+  box-shadow:         3px 3px 3px 1px #ccc;
+}
+
+#content {
+    text-align: center;
+    width: 80%;
+    background-color: white;
+    margin: 1em 5em;
+    padding:5px;
+    border: thin;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #E8E8E8;
+
+}
+
+.footer {
+    margin: 1em 5em;
+    height: 20px;
+}
+
+
+#home_words {
+    position:relative;
+    width: 80%;
+    color: #9DA3AB;
+    font-family:"Tahoma", Geneva, sans-serif;
+    text-align: center;
+    margin: 0em 5em;
+    font-size: 12px;
+}
+
+#home_name {
+    position:relative;
+    background-color: transparent;
+    color: white;
+    width: 80%;
+    font-family:"Tahoma", Geneva, sans-serif;
+    text-align: center;
+    margin: 0em 5em;
+    font-size: 100px;
+    font-weight: bolder;
+}
+
