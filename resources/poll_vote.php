@@ -31,7 +31,7 @@ fclose($fp);
     <tr>
         <td>Mac:</td>
         <td>
-            <img src="poll.gif"
+            <img src="../images/poll.gif"
             width='<?php echo(100*round($yes/($no+$yes),2)); ?>'
             height='20'>
             <?php echo(100*round($yes/($no+$yes),2)); ?>%
@@ -45,7 +45,7 @@ fclose($fp);
     <tr>
         <td>PC:</td>
         <td>
-            <img src="poll.gif"
+            <img src="../images/poll.gif"
             width='<?php echo(100*round($no/($no+$yes),2)); ?>'
             height='20'>
             <?php echo(100*round($no/($no+$yes),2)); ?>%

@@ -6,10 +6,16 @@
 <head>
 <title>Karen Suda</title>
 <link rel="stylesheet" type="text/css" href="css/karen_suda.css" />
-<link rel="shortcut icon" href="images/suda_icon.png" />
+<link rel="shortcut icon" href="suda_icon.png" />
+
+
+<meta name="description" content="Karen Suda Portfolio" />
+<meta name="keywords" content="karen, suda, cederquist, web, developer, designer, engineer, job, ui, ux, tech, php, sql, css, html, junior, javascript, java" />
+<meta name="author" content="Karen Suda-Cederquist" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
 
 </head>
-
 <body id="my_body">
      
 <!-- Banner using Nav -->
@@ -39,14 +45,15 @@
 	<div id="home_name" style="position:relative; top:-100px; left:-420px ">
 		<p>Karen Suda</p>
 	</div>
-
+	
 	
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript"> 
 
+
 $(document).ready(function(){
-$.browser.chrome = /chrome/.test(navigator.userAgent.toLowerCase()); 	
-if( $.browser.chrome){
+
+if(/chrome/.test(navigator.userAgent.toLowerCase())){
 	$(".transition1").click(function(event){
 		event.preventDefault();
 		$("#home_name").remove();
@@ -155,10 +162,11 @@ else {
 		default:
 			window.location.href = "index.html";
 		}
-	}
+
+}
 
 </script>
-
+	
 	
 </body>
 

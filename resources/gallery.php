@@ -20,7 +20,7 @@ window.onload = function() {
 <h4>
 <?php
 
-  $filelist = glob("images/img*.gif");
+  $filelist = glob("../images/img*.gif");
     if ($filelist != false) {
       print "<p>Here are some pictures:</p>";
       foreach ($filelist as $file) {
@@ -33,7 +33,7 @@ window.onload = function() {
     }
 
 ?>
-<a href="projects_php.html"> Click Here to Add a Photo to Gallery</a><br />
+<a href="../projects_php.html"> Click Here to Add a Photo to Gallery</a><br />
 </h4>
 </body>
 </html>

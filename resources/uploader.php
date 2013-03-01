@@ -10,12 +10,12 @@
 
 $MAX_FILE_SIZE = $_POST['MAX_FILE_SIZE'];
 $count = 1;
-$newpath = "images/" . "img0" . $count . ".gif";
-$filelist = glob("images/img*.gif");
+$newpath = "../images/" . "img0" . $count . ".gif";
+$filelist = glob("../images/img*.gif");
 if ($filelist != false) {
     foreach ($filelist as $file) {
         $count = $count + 1;
-        $newpath = "images/" . substr($file, strrpos($file, '/'), + 0)  . "img0" . $count . ".gif";
+        $newpath = "../images/" . substr($file, strrpos($file, '/'), + 0)  . "img0" . $count . ".gif";
     }
 }
 
@@ -23,7 +23,7 @@ if ($filelist != false) {
 if (isset($_FILES['upfile'])) {
     if($_FILES['upfile']['error'] != UPLOAD_ERR_OK || $_FILES['upfile']['type'] != "image/gif" || $_FILES['upfile']['size'] > $MAX_FILE_SIZE) {
         print "<p>Files were not uploaded successfully, please try again</p>";
-        print "<p><a href='projects_php.html'>Try Uploading Again</a> | " . "<a href='gallery.php'>View Gallery</a></p>";
+        print "<p><a href='../projects_php.html'>Try Uploading Again</a> | " . "<a href='gallery.php'>View Gallery</a></p>";
     }
 
     else {

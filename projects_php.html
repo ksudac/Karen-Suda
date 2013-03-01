@@ -7,6 +7,11 @@
 <link rel="stylesheet" type="text/css" href="css/karen_suda.css" />
 <link rel="shortcut icon" href="images/suda_icon.png" />
 
+<meta name="description" content="Karen Suda Portfolio" />
+<meta name="keywords" content="karen, suda, cederquist, web, developer, designer, engineer, job, ui, ux, tech, php, sql, css, html, junior, javascript, java" />
+<meta name="author" content="Karen Suda-Cederquist" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
 <style type="text/css">
 .box {
 	width:80%;
@@ -62,7 +67,7 @@ document.getElementById(elmnt).style.visibility="hidden";
 			},
 			submitHandler: function(form) {
 				// do other stuff for a valid form
-				$.post('process.php', $("#myform").serialize(), function(data) {
+				$.post('resources/process.php', $("#myform").serialize(), function(data) {
 					$('#results').html(data);
 				});
 			}
@@ -78,7 +83,7 @@ document.getElementById(elmnt).style.visibility="hidden";
 
 </head>
 
-<body background="white">
+<body>
 	
 <!-- Banner -->
 	<div id="logo">
@@ -130,7 +135,7 @@ document.getElementById(elmnt).style.visibility="hidden";
 		<div class="box" style="position:relative; top:50px;">
 		<div id="photo"  align="center">
 			<h3>Photo Uploader</h3>
-			<form method='post' action='uploader.php' enctype='multipart/form-data'>
+			<form method='post' action='resources/uploader.php' enctype='multipart/form-data'>
 				<p>Upload a GIF Image (max file size 100KB)</p>
 				<input type='hidden' name='MAX_FILE_SIZE' value='101201' />
 				File:  <input type='file' name='upfile' /><br/>
@@ -142,7 +147,7 @@ document.getElementById(elmnt).style.visibility="hidden";
 		<div class="box" style="position:relative; top:90px;">
 		<div id="cnt"  align="center">
 			<h3>Word Counting</h3>
-			<form action='ass5count.php' method='post'>
+			<form action='resources/ass5count.php' method='post'>
 				<p>Enter a string:</p>
 				<textarea name='input_string' rows='10' cols='60'></textarea>
 				<p><input type='submit' /></p>
@@ -153,7 +158,7 @@ document.getElementById(elmnt).style.visibility="hidden";
 		<div class="box" style="position:relative; top:130px;">
 		<div id="mult"  align="center">
 			<h3>Multiplication Table</h3>
-			<form action='ass4mult.php' method='get'>
+			<form action='resources/ass4mult.php' method='get'>
 			    <p>Enter size of multiplication table (1-10): <input type ='text' name='size' /></p>
 			    <p><input type='submit' /></p>
 			</form>
