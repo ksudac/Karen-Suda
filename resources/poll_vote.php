@@ -33,7 +33,7 @@ fclose($fp);
         <td>
             <img src="../images/poll.gif"
             width='<?php echo(100*round($yes/($no+$yes),2)); ?>'
-            height='20'>
+            height='20'/>
             <?php echo(100*round($yes/($no+$yes),2)); ?>%
         </td>
         <td>  </td>
@@ -47,7 +47,7 @@ fclose($fp);
         <td>
             <img src="../images/poll.gif"
             width='<?php echo(100*round($no/($no+$yes),2)); ?>'
-            height='20'>
+            height='20' />
             <?php echo(100*round($no/($no+$yes),2)); ?>%
         </td>
         <td>  </td>

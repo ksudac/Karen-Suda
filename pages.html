@@ -5,41 +5,44 @@
 <head>
 <title>Karen Suda</title>
 
+<meta name="description" content="Karen Suda Portfolio" />
+<meta name="keywords" content="karen, suda, cederquist, web, developer, designer, engineer, job, ui, ux, tech, php, sql, css, html, junior, javascript, java" />
+<meta name="author" content="Karen Suda-Cederquist" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 
-<link rel="stylesheet" type="text/css" href="css/karen_suda2.css" />
+<link rel="stylesheet" type="text/css" href="css/karen_suda.css" />
 <link rel="shortcut icon" href="images/suda_icon.png" />
 
-<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" />
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> 
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.min.js"></script> 
-<script src="js/bootstrap.min.js"></script>
-
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
 
 </head>
 
 <body>
 
 <!-- Banner -->
+	<div class="rainbow_bar"></div>
 	<div class="shadow">
 	<div class="navbar">
 	<div class="center">
-		<a href="index.html"><img style="position:relative; top:15px; left:70px;" src="images/logo.png" alt="logo" /></a>
+		<a href="index.html"><img style="position:relative; top:10px; left:70px;" src="images/Karen_logo.png" alt="logo" /></a>
 		<!-- Navigation -->
-			<div class="navigation" style="position:relative; top:-25px; right:-150px">
+			<div class="navigation" style="position:relative; top:-30px; right:-150px">
 				<a style="padding: 17px 30px 17px 30px;" href="pg_about.html"> about me </a>
 				<a style="padding: 17px 30px 17px 30px;" href="pg_portfolio.html"> portfolio </a>
 	        
 				<div class="dropdown">		
-				    <a style="padding: 17px 30px 17px 30px;" href="pg_projects2.html" onload="hidemenu('projects')" onmouseover="showmenu('projects')" onmouseout="hidemenu('projects')"> projects </a>
+				    <a style="padding: 17px 30px 17px 30px;" href="pg_projects.html" onload="hidemenu('projects')" onmouseover="showmenu('projects')" onmouseout="hidemenu('projects')"> projects </a>
 				    <div class="menu" id="projects">
-					<a class="menu_item c_bright_teal" href="projects_javascript.html" onload="hidemenu('projects')" onmouseover="showmenu('projects')" onmouseout="hidemenu('projects')"> javascript </a><br />
-					<a class="menu_item c_bright_teal" href="projects_java.html" onload="hidemenu('projects')" onmouseover="showmenu('projects')" onmouseout="hidemenu('projects')"> java </a><br />
-					<a class="menu_item c_bright_teal" href="projects_flash.html" onload="hidemenu('projects')" onmouseover="showmenu('projects')" onmouseout="hidemenu('projects')"> flash animation </a><br />
-					<a class="menu_item c_bright_teal" href="projects_actionscript.html" onload="hidemenu('projects')" onmouseover="showmenu('projects')" onmouseout="hidemenu('projects')"> actionScript </a><br />
-					<a class="menu_item c_bright_teal" href="projects_php.html" onload="hidemenu('projects')" onmouseover="showmenu('projects')" onmouseout="hidemenu('projects')"> php </a><br />
+					<a class="menu_item" href="projects_javascript.html" onload="hidemenu('projects')" onmouseover="showmenu('projects')" onmouseout="hidemenu('projects')"> javascript </a><br />
+					<a class="menu_item" href="projects_java.html" onload="hidemenu('projects')" onmouseover="showmenu('projects')" onmouseout="hidemenu('projects')"> java </a><br />
+					<a class="menu_item" href="projects_flash.html" onload="hidemenu('projects')" onmouseover="showmenu('projects')" onmouseout="hidemenu('projects')"> flash animation </a><br />
+					<a class="menu_item" href="projects_actionscript.html" onload="hidemenu('projects')" onmouseover="showmenu('projects')" onmouseout="hidemenu('projects')"> actionScript </a><br />
+					<a class="menu_item" href="projects_php.html" onload="hidemenu('projects')" onmouseover="showmenu('projects')" onmouseout="hidemenu('projects')"> php </a><br />
 				    </div>
 				</div>
 		
@@ -48,26 +51,35 @@
 	</div>
 	</div>
 	</div>
-	
-<!-- Body content -->
-	<div id="content" >
-		<br />	<br />
-		<img src="images/aboutme.png" alt="aboutme" />
-		<br /><br /><br />
-		<a href="resources/Karen_Suda_Resume.php">Download Resume (PDF)</a>
-		<br /><br />
-	</div>
 
-<script type="text/javascript">
-    
+<!-- Body content -->
+<div id="content" style="position:relative; top:20px;">		
+</div>
+<div class="footer"></div> 	
+
+<script type="text/javascript">  
 function showmenu(elmnt){
 document.getElementById(elmnt).style.visibility="visible";
 }
 function hidemenu(elmnt){
 document.getElementById(elmnt).style.visibility="hidden";
 }
-
 </script>
 	
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#content").css("display", "none");
+    $("#content").fadeIn(1000);
+    $("a.transition").click(function(event){
+        event.preventDefault();
+        linkLocation = this.href;
+        $("#content").fadeOut(1000, redirectPage);      
+    });   
+    function redirectPage() {
+        window.location = linkLocation;
+    }
+});
+</script>
+
 </body>
 </html>

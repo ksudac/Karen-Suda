@@ -1,6 +1,13 @@
 html {
 background-color: white;
-overflow-y: scroll
+overflow-y: scroll;
+height: 100%;
+}
+
+body, html{
+    background-image:url('../images/white_pattern.jpg');
+    background-repeat: repeat;
+    height: 100%;
 }
 
 .c_red {background-color: #D24247; }
@@ -11,6 +18,20 @@ overflow-y: scroll
 .c_teal {background-color: #6EAC9D; }
 .c_sky {background-color: #70B7E0; }
 
+.c_gray {background-color: #2D2D2D; }
+
+.c_dark_teal {background-color: #7ABABB; }
+.c_light_orange {background-color: #DFB058; }
+.c_bright_orange { background-color: #D89B4C;}
+.c_red_orange {background-color: #C84636; }
+
+.c_green {background-color: #385859; }
+.c_bright_teal {background-color: #6BAAB1; }
+.c_rose {background-color: #9D4966; }
+.c_yellow {background-color: #E7C950; }
+.c_brown { background-color: #B78636;}
+
+
 a img {
     border: 0px;
 }
@@ -19,6 +40,28 @@ a img {
     width: 80%;
     padding-top: 15px;
     margin: 0em 5em;
+}
+.rainbow_bar{
+    height: 9px;
+    background-image:url('../images/rainbow.png');
+    background-repeat: repeat;
+    z-index: 12;
+    width:120%;
+}
+
+.new_background{
+    height: 1000px;
+    background-image:url('../images/white_pattern.jpg');
+    background-repeat: repeat;
+    z-index: 12;
+    width: 120%;
+}
+
+.navbar {
+    height: 80px;
+    background-image:url('../images/black_pattern.jpg');
+    background-repeat: repeat;
+    z-index: 10;
 }
 
 .navigation {
@@ -38,26 +81,7 @@ a img {
 
 .navigation a:hover {
     color: gray;
-}
-
-.nav2 {
-    text-align: center;
-    width: 80%;
-    font-family:"Tahoma", Geneva, sans-serif;
-    font-weight: normal;
-    margin: 0em 5em;
-    height: 12px;
-}
-
-.nav2 a{
-    color: white;
-    font-size: 14px;
     text-decoration: none;
-}
-
-.nav2 a:hover {
-    color: gray;
-
 }
 
 .dropdown {
@@ -69,15 +93,26 @@ a img {
     visibility:hidden;
     z-index: 100;
     top: 33px;
+    margin-left: 22px;
+    background-color: #161614;
 }
 
 .menu_item{
-    width:114px;
-    line-height: 30px;
+    width:100px;
+    line-height: 25px;
     border-bottom:solid;
-    border-width:1px;
-    border-color:gray;
+    border-width:2px;
+    border-color:#383838 ;
     float:left;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 14px !important;
+}
+
+.shadow {
+  -moz-box-shadow:    3px 3px 3px 1px #ccc;
+  -webkit-box-shadow: 3px 3px 3px 1px #ccc;
+  box-shadow:         3px 3px 3px 1px #ccc;
 }
 
 #content {
@@ -91,6 +126,20 @@ a img {
     border-radius: 5px;
     border-color: #E8E8E8;
 
+}
+
+.box {
+	width:80%;
+	margin:auto;
+	text-align:left;
+	padding:15px;
+	background-color:#E0E0E0;
+}
+
+label.error {
+    width: 250px;
+    display: inline;
+    color: red;
 }
 
 .footer {
