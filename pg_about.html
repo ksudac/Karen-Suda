@@ -18,7 +18,8 @@
 
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
-
+<script type="text/javascript" src="js/jquery.imagemapster.min.js"></script>
+<script type="text/javascript" src="js/tooltip.js"></script>
 
 </head>
 
@@ -55,11 +56,94 @@
 <!-- Body content -->
 	<div id="content">
 		<br />	<br />
-		<img src="images/aboutme.png" alt="aboutme" />
+			
+			<img src="images/aboutme.png" style="width:100%" alt="" usemap="#venMap" id="ven">
+
+			<map name="venMap">
+				<area shape="circle" coords="181,166,79" alt="" href="#" group="pop_programming">
+				<area shape="circle" coords="220,254,52" alt="" href="#" group="pop_data">
+				<area shape="circle" coords="270,188,62" alt="" href="#" group="pop_quality">
+				<area shape="circle" coords="336,225,28" alt="" href="#" group="pop_support">
+				<area shape="circle" coords="109,217,41" alt="" href="#" group="pop_design">
+				<area shape="circle" coords="68,250,24" alt="" href="#" group="pop_3d">
+				
+				<area shape="rect" coords="485,44,775,134" alt="" href="#" group="pop_experience">
+				<area shape="rect" coords="486,186,620,331" alt="" href="#" group="pop_me_education">
+				<area shape="rect" coords="620,186,777,331" alt="" href="#" group="pop_web_education">
+				<area shape="rect" coords="23,377,444,457" alt="" href="#" group="pop_languages">
+				<area shape="rect" coords="484,377,777,457" alt="" href="#" group="pop_design_tool">
+			</map>
+			
 		<br /><br /><br />
 		<a href="resources/Karen_Suda_Resume.php">Download Resume (PDF)</a>
 		<br /><br />
 	</div>
+<br />
+
+			
+
+<script type="text/javascript">
+  $('#ven').mapster({
+	showToolTip: true,
+	mapKey: "group",
+        fillColor: '9D4966',
+	toolTipContainer: getToolTipContainer(),
+        fillOpacity: 0.3,
+	areas: [
+		{
+			key: "pop_programming",
+			toolTip: "Write clean code that makes web applications come alive in the browser. Develop server-side PHP scripts that implement dynamic web pages using MySQL databases."
+		},
+		{
+			key: "pop_data",
+			toolTip: "Excellent at analyzing large, complex data sets from varying sources. Experienced in creating statistical models to predict risk, quantify potential liability, and influence business decisions."
+		},
+		{
+			key: "pop_quality",
+			toolTip: "Develop, implement and manage testing programs to check and improve quality. Optimize processes to cut time and costs."
+		},
+		{
+			key: "pop_support",
+			toolTip: "Provide exceptional support by taking ownership for issues from initial contact through resolution. Resolve customer issues by troubleshooting the issue, determining root cause and facilitating corrective action."
+		},
+		{
+			key: "pop_design",
+			toolTip: "Strong UI/UX with great eye for design. Experience designing visual appealing web applications that follow basic design fundamentals."
+		},
+		{
+			key: "pop_3d",
+			toolTip: "Working knowledge of Autodesk Inventor and SolidWorks 3D CAD software. Proficient with AutoCAD and DraftSight 2D CAD software."
+		},
+		{
+			key: "pop_experience",
+			toolTip: "R&D Engineer at Simpson Strong-Tie. Developed products through entire lifecycle - from product conception, design, and fabrication to customer installation. Focused on delivering quality products that satisfy customer requirements and constraints."
+		},
+		{
+			key: "pop_me_education",
+			toolTip: "Solved innovative solutions to challenging problems. Acquired broad understanding of core scientific concepts and in-depth knowledge of mechanical concepts."
+		},
+		{
+			key: "pop_web_education",
+			toolTip: "Designed, built and published interactive web pages. Solved problems using object-oriented fundamentals that are essential for adapting to changes in technology."
+		},
+		{
+			key: "pop_languages",
+			toolTip: "Proficient in the languages listed. See project page for examples."
+		},
+		{
+			key: "pop_design_tool",
+			toolTip: "Proficient with the Adobe programs listed. These programs have been used to create this website and other sites. See portfolio page for examples."
+		}
+	
+	]
+  });
+
+function getToolTipContainer() {
+  return $('<div style="border: 2px solid black; background: #EEEEEE; width:300px; padding:4px; margin: 4px; -moz-box-shadow: 3px 3px 5px #535353; ' +
+        '-webkit-box-shadow: 3px 3px 5px #535353; box-shadow: 3px 3px 5px #535353; -moz-border-radius: 6px 6px 6px 6px; -webkit-border-radius: 6px; ' +
+        'border-radius: 6px 6px 6px 6px; opacity: 0.9;"></dteniv>');
+}
+</script>
 
 
 <script type="text/javascript">

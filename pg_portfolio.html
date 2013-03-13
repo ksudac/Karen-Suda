@@ -64,23 +64,27 @@
 		    <ul class="thumbnails">
 		    <li>
 			<a href="#" class="thumbnail" id="showOkashii">
-			    <img src="img/okashii.png" alt="" width="100%" height="auto">
+				<img src="img/okashii.png" alt="" width="100%" height="auto" />
 			</a>
+			<a href="http://www.okashiica.com/" target="_blank">okashiiCA.com</a>
 		    </li>
 		    <li>
 			<a href="#" class="thumbnail" id="showTree">
-			    <img src="img/tree.png" alt="" width="100%" height="auto">
+				<img src="img/tree.png" alt="" width="100%" height="auto" />
 			</a>
+			<a href="http://www.treeshipcapital.com/" target="_blank">treeshipcapital.com</a>	
 		    </li>
 		    <li>
 			<a href="#" class="thumbnail" id="showSnow">
-			    <img src="img/snow.png" alt="" width="100%" height="auto">
+				<img src="img/snow.png" alt="" width="100%" height="auto" />
 			</a>
+			Stealth Startup - Releasing soon!
 		    </li>
 		    <li>
 			<a href="#" class="thumbnail" id="showTaiko">
-			    <img src="img/taiko.png" alt="" width="100%" height="auto">
+				<img src="img/taiko.png" alt="" width="100%" height="auto" />
 			</a>
+			<a href="http://www.edentaiko.com/" target="_blank">edentaiko.com - Site Updates Only</a>	
 		    </li>
 		    </ul>
 		</div>
@@ -184,12 +188,13 @@ $('.snowCarousel').carousel({
 $('.taikoCarousel').carousel({
     interval: 3000});
  
-window.onload=function(){
+$(document).ready(function(){
     $("#okashiiCarousel").show();
     $("#treeCarousel").hide();
     $("#snowCarousel").hide();
     $("#taikoCarousel").hide();
-};
+});
+
     
 $(document).ready(function(){
 $("#showOkashii").click(function(){
