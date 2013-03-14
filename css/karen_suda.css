@@ -60,7 +60,7 @@ a img {
 
 .navbar {
     height: 80px;
-    background-image:url('../images/black_pattern.jpg');
+    background-image:url('../images/black_pattern.png');
     background-repeat: repeat;
     z-index: 10;
 }
