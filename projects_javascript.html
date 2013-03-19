@@ -1,8 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<!--************************************************************************************************
+Thanks for viewing my source code! Hit me up if you have any questions or comments ksudac@gmail.com
+Last updated 3/13/2013
+*************************************************************************************************-->
+
 <head>
+	
 <title>Karen Suda</title>
 
 <meta name="description" content="Karen Suda Portfolio" />
@@ -10,87 +16,84 @@
 <meta name="author" content="Karen Suda-Cederquist" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-
 <link rel="stylesheet" type="text/css" href="css/karen_suda.css" />
 <link rel="shortcut icon" href="images/suda_icon.png" />
-
 <link href="css/bootstrap2.css" type="text/css" rel="stylesheet" />
 
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-
 <style type="text/css">
-	
 	.yellow { background-color: #FFFF00; }
 	.green { background-color: #4CC417; }
 	.orange { background-color: #FFA500; }
-	
 	.small { font-size: 8px; }	
 	.medium { font-size: 12px; }
 	.large { font-size: 24px; }
-	
 	.arial { font-family: Sans-serif; }	
 	.times { font-family: Serif; }
-	
 	.bold { font-weight: bold; }
 	.italic { font-style: italic }
 	.normal { font-style: normal; }	
-
 </style>
-
 
 </head>
 
 <body>
 
-<!-- Banner -->
-	<div class="rainbow_bar"></div>
-	<div class="shadow">
-	<div class="navbar">
-	<div class="center">
-		<a href="index.html"><img style="position:relative; top:10px; left:70px;" src="images/Karen_logo.png" alt="logo" /></a>
-		<!-- Navigation -->
-			<div class="navigation" style="position:relative; top:-30px; right:-150px">
-				<a style="padding: 17px 30px 17px 30px;" href="pg_about.html"> about me </a>
-				<a style="padding: 17px 30px 17px 30px;" href="pg_portfolio.html"> portfolio </a>
-	        
-				<div class="dropdown">		
-				    <a style="padding: 17px 30px 17px 30px;" href="pg_projects.html" onload="hidemenu('projects')" onmouseover="showmenu('projects')" onmouseout="hidemenu('projects')"> projects </a>
-				    <div class="menu" id="projects">
-					<a class="menu_item" href="projects_javascript.html" onload="hidemenu('projects')" onmouseover="showmenu('projects')" onmouseout="hidemenu('projects')"> javascript </a><br />
-					<a class="menu_item" href="projects_java.html" onload="hidemenu('projects')" onmouseover="showmenu('projects')" onmouseout="hidemenu('projects')"> java </a><br />
-					<a class="menu_item" href="projects_flash.html" onload="hidemenu('projects')" onmouseover="showmenu('projects')" onmouseout="hidemenu('projects')"> flash animation </a><br />
-					<a class="menu_item" href="projects_actionscript.html" onload="hidemenu('projects')" onmouseover="showmenu('projects')" onmouseout="hidemenu('projects')"> actionScript </a><br />
-					<a class="menu_item" href="projects_php.html" onload="hidemenu('projects')" onmouseover="showmenu('projects')" onmouseout="hidemenu('projects')"> php </a><br />
-				    </div>
-				</div>
+<!-- Top Banner -->
+<div class="rainbow_bar"></div>
+<div class="shadow">
+<div class="navbar">
+<div class="center">
+	<a href="index.html"><img style="position:relative; top:10px; left:70px;" src="images/Karen_logo.png" alt="logo" /></a>
 		
-				<a style="padding: 17px 30px 17px 30px;margin-left: -5px;" href="pg_contact.html"> contact </a>
+	<!-- Main Navigation -->
+	<div class="navigation" style="position:relative; top:-30px; right:-150px">
+		<a style="padding: 17px 30px 17px 30px;" href="pg_about.html"> about me </a>
+		<a style="padding: 17px 30px 17px 30px;" href="pg_portfolio.html"> portfolio </a>
+				
+		<!-- Dropdown Navigation -->
+		<div class="dropdown">		
+			<a style="padding: 17px 30px 17px 30px;" href="pg_projects.html" onmouseover="showmenu('projects')" onmouseout="hidemenu('projects')"> projects </a>
+			<div class="menu" id="projects">
+				<a class="menu_item" href="projects_javascript.html" onmouseover="showmenu('projects')" onmouseout="hidemenu('projects')"> javascript </a><br />
+				<a class="menu_item" href="projects_java.html" onmouseover="showmenu('projects')" onmouseout="hidemenu('projects')"> java </a><br />
+				<a class="menu_item" href="projects_flash.html" onmouseover="showmenu('projects')" onmouseout="hidemenu('projects')"> flash animation </a><br />
+				<a class="menu_item" href="projects_actionscript.html" onmouseover="showmenu('projects')" onmouseout="hidemenu('projects')"> actionScript </a><br />
+				<a class="menu_item" href="projects_php.html" onmouseover="showmenu('projects')" onmouseout="hidemenu('projects')"> php </a><br />
 			</div>
+		</div>
+		<!-- End Dropdown Navigation -->
+				
+		<a style="padding: 17px 30px 17px 30px;margin-left: -5px;" href="pg_contact.html"> contact </a>
 	</div>
-	</div>
-	</div>
+	<!-- End Main Navigation -->
+		
+</div>
+</div>
+</div>
+<!-- End Top Banner -->	
 
 <!-- Body content -->
-	<div id="content" style="position:relative; top:20px;">	
-		<h2>Javascript</h2>
-			<div class="box" style="position:relative; top:20px;">
-			<div id="poll"  align="center">
-				<h3>Sample Poll</h3>
-				<h4>Which platform do you prefer?</h4>
-				<form action=" ">
+<div id="content" style="position:relative; top:20px;">	
+	<h2>Javascript</h2>
+		<!-- Poll -->
+		<div class="box" style="position:relative; top:20px;">
+		<div id="poll"  align="center">
+			<h3>Sample Poll</h3>
+			<h4>Which platform do you prefer?</h4>
+			<form action=" ">
 				Mac:
 				<input type="radio" name="vote" value="0" onclick="getVote(this.value)" />
 				<br />PC:
 				<input type="radio" name="vote" value="1" onclick="getVote(this.value)" />
-				</form>
-				</div>
-				</div>
-				
-				<div class="box" style="position:relative; top:50px;">
-				<div id="states" align="center">
-				<h3>State Data</h3>
-				<form name="myform" action="">
+			</form>
+		</div>
+		</div>
+		
+		<!-- States -->	
+		<div class="box" style="position:relative; top:50px;">
+		<div id="states" align="center">
+			<h3>State Data</h3>
+			<form name="myform" action="">
 				<h4> Enter a US state code to see the capitol and population </h4>
 				<table>
 					<tr>
@@ -110,15 +113,16 @@
 						<td><input type="text" id="population" size="20" readonly="readonly" /></td>
 					</tr>
 				</table>
-				</form>
-			</div>
-			</div>
-			
-			<div class="box" style="position:relative; top:90px;">
-			<div id="charfinder"  align="center">
-				<h3>Character Finder</h3>	
-				<h4> Enter a paragraph and see how many times a character was entered </h4>
-				<form name="textform" action="">
+			</form>
+		</div>
+		</div>
+		
+		<!-- Character Finder-->
+		<div class="box" style="position:relative; top:90px;">
+		<div id="charfinder"  align="center">
+			<h3>Character Finder</h3>	
+			<h4> Enter a paragraph and see how many times a character was entered </h4>
+			<form name="textform" action="">
 				<table>
 				    <tr>
 					<td>Input some text: </td>
@@ -132,30 +136,29 @@
 				<input type="button"  onclick="processText()" value="Submit" />
 				<input type="reset" value="Reset" /> <br /> <br />
 				<textarea id ="listOut" rows = "2" cols = "60"></textarea>
-				</form>
-			</div> 
-			</div> 
+			</form>
+		</div> 
+		</div> 
 			
+		<!-- Change the Format -->	
+		<div class="box" style="position:relative; top:130px;">
+		<div id="bodyFont" align="center">
+		<div id="bodySize" align="center">
+		<div id="bodyStyle" align="center">
+		<div id="bodyBack" align="center">
+			<h3 align="center"> Format Changer  </h3>
+			<h4 align="center"> Select your page layout and formatting by changing the<br /> background color, font size, font family, and font weight! </h4>
 			
-			
-			<div class="box" style="position:relative; top:130px;">
-			<div id="bodyFont" align="center">
-			<div id="bodySize" align="center">
-			<div id="bodyStyle" align="center">
-			<div id="bodyBack" align="center">
-				<h3 align="center"> Format Changer  </h3>
-				<h4 align="center"> Select your page layout and formatting by changing the<br /> background color, font size, font family, and font weight! </h4>
-			
-				<form name="fontForm" id="fontForm" action="">		 
+			<form name="fontForm" id="fontForm" action="">		 
 				Font Family:<br />
 					<select name="family" id="family" onchange="fontFamily()"> 
 					<option value="" selected="selected">Choose font family</option>
 					<option value="times">Times New Roman</option> 
 					<option value="arial">Arial</option>
 					</select> <br /><br />
-				</form>
+			</form>
 				
-				<form name="SizeForm" id="sizeForm" action="">
+			<form name="SizeForm" id="sizeForm" action="">
 				Font Size:<br />
 					<select name="size" id="size" onchange="fontSize()"> 
 					<option value="" selected="selected">Choose font size</option>
@@ -163,65 +166,69 @@
 					<option value="medium">Medium</option> 
 					<option value="large">Large</option> 
 					</select> <br /><br />
-				</form>
+			</form>
 				
-				<form name="styleForm" id="styleForm" action="">
+			<form name="styleForm" id="styleForm" action="">
 				Font Style/Weight:<br />
 					<input type="radio" name="style" onclick="fontStyle(0)"/> Bold	
 					<input type="radio" name="style" onclick="fontStyle(1)"/> Italic
 					<input type="radio" name="style" onclick="fontStyle(2)"/> Normal
 					<br /><br />
-				</form>
+			</form>
 				
-				<form name="backForm" id="backForm" action="">
+			<form name="backForm" id="backForm" action="">
 				Background Color:<br />
 					<input type="button" name="color" value="Green" onclick="backColor(0)"/> 
 					<input type="button" name="color" value="Orange" onclick="backColor(1)"/>
 					<input type="button" name="color" value="Yellow" onclick="backColor(2)"/> 
 					<br /><br />
-				</form>
+			</form>
 				
-			</div>
-			</div>
-			</div>
-			</div>
-			</div>
-			<div class="footer"></div>
-			<div class="footer"></div>
-			<div class="footer"></div>
-			<div class="footer"></div>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+	<div class="footer"></div>
+	<div class="footer"></div>
+	<div class="footer"></div>
+	<div class="footer"></div>
 </div>
 <div class="footer"></div> 	
 
 
-<script type="text/javascript">  
-function showmenu(elmnt){
-document.getElementById(elmnt).style.visibility="visible";
-}
-function hidemenu(elmnt){
-document.getElementById(elmnt).style.visibility="hidden";
-}
-</script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
 
-	
+<!-- Page Transition/Fade -->
 <script type="text/javascript">
 $(document).ready(function() {
-    $("#content").css("display", "none");
-    $("#content").fadeIn(1000);
-    $("a.transition").click(function(event){
-        event.preventDefault();
-        linkLocation = this.href;
-        $("#content").fadeOut(1000, redirectPage);      
-    });   
-    function redirectPage() {
-        window.location = linkLocation;
-    }
+	$("#content").css("display", "none");
+	$("#content").fadeIn(1000);
+	$("a.transition").click(function(event){
+		event.preventDefault();
+		linkLocation = this.href;
+		$("#content").fadeOut(1000, redirectPage);      
+	});   
+	function redirectPage() {
+	    window.location = linkLocation;
+	}
 });
+</script>	
+
+<!-- Drop-Down Navigation Show and Hide -->
+<script type="text/javascript">  
+function showmenu(elmnt){
+	document.getElementById(elmnt).style.visibility="visible";
+}
+function hidemenu(elmnt){
+	document.getElementById(elmnt).style.visibility="hidden";
+}
 </script>
 
+<!-- Poll -->
 <script type="text/javascript">
 /* <![CDATA[ */
-
 function getVote(int){
     if (window.XMLHttpRequest)  {// code for IE7+, Firefox, Chrome, Opera, Safari
       xmlhttp=new XMLHttpRequest();
@@ -236,15 +243,13 @@ function getVote(int){
     }
     xmlhttp.open("GET","resources/poll_vote.php?vote="+int,true);
     xmlhttp.send();
-    }
-    
+    }  
 /*]]>*/
 </script>
 
-
+<!-- State Information-->
 <script type="text/javascript">
 /* <![CDATA[ */
-
 function process(str)
 {
 	var ajaxRequest; // The variable that makes Ajax possible!
@@ -266,8 +271,6 @@ function process(str)
 			}
 		}
 
-// Create a function that will receive data sent from the server
-
 	ajaxRequest.onreadystatechange= function(){
 		if(ajaxRequest.readyState == 4) {
 			var theState = ajaxRequest.responseText.split(",") ;
@@ -280,17 +283,12 @@ function process(str)
 	ajaxRequest.open("GET","resources/getState.php?stcode="+str.toUpperCase(), true);
 	ajaxRequest.send(null);
 }
-
-
-
-
 /*]]>*/
 </script>
 
-
+<!-- Character Finder -->
 <script type="text/javascript">
 /* <![CDATA[ */
-
 function processText(){
     
     var inputchar, inputtext;
@@ -332,15 +330,12 @@ function processText(){
         document.getElementById("listOut").innerHTML = htmlOutput;
     }
 }
-
-
 /*]]>*/
 </script>
 
-
+<!-- Format Changer -->
 <script type="text/javascript">
 /* <![CDATA[ */
-
 function fontSize(){
 	var body = document.getElementById("bodySize");
 	var myFontSize = document.getElementById('size').value;
@@ -351,7 +346,6 @@ function fontSize(){
 	else if (myFontSize == "large")
 		bodySize.className = "large";
 }
-
 function fontFamily(){
 	var body = document.getElementById("bodyFont");
 	var myFontFamily = document.getElementById('family').value;
@@ -360,7 +354,6 @@ function fontFamily(){
 	else if (myFontFamily == "arial")
 		bodyFont.className = "arial";
 }		
-
 function fontStyle(style){
 	var body = document.getElementById("bodyStyle");
 	if (style == 0) 			
@@ -370,7 +363,6 @@ function fontStyle(style){
 	else if(style == 2) 
 		bodyStyle.className = "normal";
 }
-
 function backColor(color){ 
 	var body = document.getElementById("bodyBack");
 	if (color == 0)
@@ -380,10 +372,10 @@ function backColor(color){
 	else if(color == 2)
 		bodyBack.className = "yellow";			
 }
-
 /*]]>*/
 </script>
 
+<!-- Pre-Load All Images -->
 <script type="text/javascript" src="js/load2.js"></script>
 
 </body>

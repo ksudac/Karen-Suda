@@ -1,8 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<!--************************************************************************************************
+Thanks for viewing my source code! Hit me up if you have any questions or comments ksudac@gmail.com
+Last updated 3/13/2013
+*************************************************************************************************-->
+
 <head>
+	
 <title>Karen Suda</title>
 
 <meta name="description" content="Karen Suda Portfolio" />
@@ -10,83 +16,89 @@
 <meta name="author" content="Karen Suda-Cederquist" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-
 <link rel="stylesheet" type="text/css" href="css/karen_suda.css" />
 <link rel="shortcut icon" href="images/suda_icon.png" />
 
 <link href="css/bootstrap.css" type="text/css" rel="stylesheet" />
 
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/jquery.imagemapster.min.js"></script>
-<script type="text/javascript" src="js/tooltip.js"></script>
-
 </head>
 
 <body>
 
-<!-- Banner -->
-	<div class="rainbow_bar"></div>
-	<div class="shadow">
-	<div class="navbar">
-	<div class="center">
-		<a href="index.html"><img style="position:relative; top:10px; left:70px;" src="images/Karen_logo.png" alt="logo" /></a>
-		<!-- Navigation -->
-			<div class="navigation" style="position:relative; top:-30px; right:-150px">
-				<a style="padding: 17px 30px 17px 30px;" href="pg_about.html"> about me </a>
-				<a style="padding: 17px 30px 17px 30px;" href="pg_portfolio.html"> portfolio </a>
-	        
-				<div class="dropdown">		
-				    <a style="padding: 17px 30px 17px 30px;" href="pg_projects.html" onload="hidemenu('projects')" onmouseover="showmenu('projects')" onmouseout="hidemenu('projects')"> projects </a>
-				    <div class="menu" id="projects">
-					<a class="menu_item" href="projects_javascript.html" onload="hidemenu('projects')" onmouseover="showmenu('projects')" onmouseout="hidemenu('projects')"> javascript </a><br />
-					<a class="menu_item" href="projects_java.html" onload="hidemenu('projects')" onmouseover="showmenu('projects')" onmouseout="hidemenu('projects')"> java </a><br />
-					<a class="menu_item" href="projects_flash.html" onload="hidemenu('projects')" onmouseover="showmenu('projects')" onmouseout="hidemenu('projects')"> flash animation </a><br />
-					<a class="menu_item" href="projects_actionscript.html" onload="hidemenu('projects')" onmouseover="showmenu('projects')" onmouseout="hidemenu('projects')"> actionScript </a><br />
-					<a class="menu_item" href="projects_php.html" onload="hidemenu('projects')" onmouseover="showmenu('projects')" onmouseout="hidemenu('projects')"> php </a><br />
-				    </div>
-				</div>
+<!-- Top Banner -->
+<div class="rainbow_bar"></div>
+<div class="shadow">
+<div class="navbar">
+<div class="center">
+	<a href="index.html"><img style="position:relative; top:10px; left:70px;" src="images/Karen_logo.png" alt="logo" /></a>
 		
-				<a style="padding: 17px 30px 17px 30px;margin-left: -5px;" href="pg_contact.html"> contact </a>
-			</div>
-	</div>
-	</div>
-	</div>
-	
-<!-- Body content -->
-	<div id="content">
-		<br />	<br />
-			
-			<img src="images/aboutme.png" style="width:100%" alt="" usemap="#venMap" id="ven">
-
-			<map name="venMap">
-				<area shape="circle" coords="181,166,79" alt="" href="#" group="pop_programming">
-				<area shape="circle" coords="220,254,52" alt="" href="#" group="pop_data">
-				<area shape="circle" coords="270,188,62" alt="" href="#" group="pop_quality">
-				<area shape="circle" coords="336,225,28" alt="" href="#" group="pop_support">
-				<area shape="circle" coords="109,217,41" alt="" href="#" group="pop_design">
-				<area shape="circle" coords="68,250,24" alt="" href="#" group="pop_3d">
+	<!-- Main Navigation -->
+	<div class="navigation" style="position:relative; top:-30px; right:-150px">
+		<a style="padding: 17px 30px 17px 30px;" href="pg_about.html"> about me </a>
+		<a style="padding: 17px 30px 17px 30px;" href="pg_portfolio.html"> portfolio </a>
 				
-				<area shape="rect" coords="485,44,775,134" alt="" href="#" group="pop_experience">
-				<area shape="rect" coords="486,186,620,331" alt="" href="#" group="pop_me_education">
-				<area shape="rect" coords="620,186,777,331" alt="" href="#" group="pop_web_education">
-				<area shape="rect" coords="23,377,444,457" alt="" href="#" group="pop_languages">
-				<area shape="rect" coords="484,377,777,457" alt="" href="#" group="pop_design_tool">
-			</map>
-			
-		<br /><br /><br />
-		<a href="resources/Karen_Suda_Resume.php">Download Resume (PDF)</a>
-		<br /><br />
+		<!-- Dropdown Navigation -->
+		<div class="dropdown">		
+			<a style="padding: 17px 30px 17px 30px;" href="pg_projects.html" onmouseover="showmenu('projects')" onmouseout="hidemenu('projects')"> projects </a>
+			<div class="menu" id="projects">
+				<a class="menu_item" href="projects_javascript.html" onmouseover="showmenu('projects')" onmouseout="hidemenu('projects')"> javascript </a><br />
+				<a class="menu_item" href="projects_java.html" onmouseover="showmenu('projects')" onmouseout="hidemenu('projects')"> java </a><br />
+				<a class="menu_item" href="projects_flash.html" onmouseover="showmenu('projects')" onmouseout="hidemenu('projects')"> flash animation </a><br />
+				<a class="menu_item" href="projects_actionscript.html" onmouseover="showmenu('projects')" onmouseout="hidemenu('projects')"> actionScript </a><br />
+				<a class="menu_item" href="projects_php.html" onmouseover="showmenu('projects')" onmouseout="hidemenu('projects')"> php </a><br />
+			</div>
+		</div>
+		<!-- End Dropdown Navigation -->
+				
+		<a style="padding: 17px 30px 17px 30px;margin-left: -5px;" href="pg_contact.html"> contact </a>
 	</div>
-<br />
+	<!-- End Main Navigation -->
+		
+</div>
+</div>
+</div>
+<!-- End Top Banner -->	
 
+
+<!-- Body content -->
+<div id="content">
+	<!-- Image Map for About me Image -->
+	<img src="images/aboutme.jpg" style="width:100%" alt="" usemap="#venMap" id="ven"/>
+
+		<map name="venMap" id="venMap" >
+			<area shape="circle" coords="181,166,79" alt="" href="#" group="pop_programming"/>
+			<area shape="circle" coords="220,254,52" alt="" href="#" group="pop_data"/>
+			<area shape="circle" coords="270,188,62" alt="" href="#" group="pop_quality"/>
+			<area shape="circle" coords="336,225,28" alt="" href="#" group="pop_support"/>
+			<area shape="circle" coords="109,217,41" alt="" href="#" group="pop_design"/>
+			<area shape="circle" coords="68,250,24" alt="" href="#" group="pop_3d"/>
 			
+			<area shape="rect" coords="485,44,775,134" alt="" href="#" group="pop_experience"/>
+			<area shape="rect" coords="486,186,620,331" alt="" href="#" group="pop_me_education"/>
+			<area shape="rect" coords="620,186,777,331" alt="" href="#" group="pop_web_education"/>
+			<area shape="rect" coords="23,377,444,457" alt="" href="#" group="pop_languages"/>
+			<area shape="rect" coords="484,377,777,457" alt="" href="#" group="pop_design_tool"/>
+		</map>
+		<!-- End About Image Mapping -->
+	<!-- Download Resume -->
+	<a href="resources/Karen_Suda_Resume.php">Download Resume (PDF)</a>
+	<br />
+</div>
+<br />
+<!-- End Body content -->
 
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.imagemapster.min.js"></script>
+<script type="text/javascript" src="js/tooltip.js"></script>			
+
+<!-- ToolTip on Scrollover -->
 <script type="text/javascript">
-  $('#ven').mapster({
+$('#ven').mapster({
 	showToolTip: true,
 	mapKey: "group",
-        fillColor: '9D4966',
+        fillColor: "9D4966",
 	toolTipContainer: getToolTipContainer(),
         fillOpacity: 0.3,
 	areas: [
@@ -116,7 +128,7 @@
 		},
 		{
 			key: "pop_experience",
-			toolTip: "R&D Engineer at Simpson Strong-Tie. Developed products through entire lifecycle - from product conception, design, and fabrication to customer installation. Focused on delivering quality products that satisfy customer requirements and constraints."
+			toolTip: "R&amp;D Engineer at Simpson Strong-Tie. Developed products through entire lifecycle - from product conception, design, and fabrication to customer installation. Focused on delivering quality products that satisfy customer requirements and constraints."
 		},
 		{
 			key: "pop_me_education",
@@ -136,41 +148,42 @@
 		}
 	
 	]
-  });
-
+});
 function getToolTipContainer() {
-  return $('<div style="border: 2px solid black; background: #EEEEEE; width:300px; padding:4px; margin: 4px; -moz-box-shadow: 3px 3px 5px #535353; ' +
+return $('<div style="border: 2px solid black; background: #EEEEEE; width:300px; padding:4px; margin: 4px; -moz-box-shadow: 3px 3px 5px #535353; ' +
         '-webkit-box-shadow: 3px 3px 5px #535353; box-shadow: 3px 3px 5px #535353; -moz-border-radius: 6px 6px 6px 6px; -webkit-border-radius: 6px; ' +
-        'border-radius: 6px 6px 6px 6px; opacity: 0.9;"></dteniv>');
+        'border-radius: 6px 6px 6px 6px; opacity: 0.9;"></div>');
 }
 </script>
 
 
+<!-- Page Transition/Fade -->
 <script type="text/javascript">
 $(document).ready(function() {
-    $("#content").css("display", "none");
-    $("#content").fadeIn(1000);
-    $("a.transition").click(function(event){
-        event.preventDefault();
-        linkLocation = this.href;
-        $("#content").fadeOut(1000, redirectPage);      
-    });   
-    function redirectPage() {
-        window.location = linkLocation;
-    }
+	$("#content").css("display", "none");
+	$("#content").fadeIn(1000);
+	$("a.transition").click(function(event){
+		event.preventDefault();
+		linkLocation = this.href;
+		$("#content").fadeOut(1000, redirectPage);      
+	});   
+	function redirectPage() {
+	    window.location = linkLocation;
+	}
 });
 </script>	
 
+<!-- Drop-Down Navigation Show and Hide -->
 <script type="text/javascript">  
 function showmenu(elmnt){
-document.getElementById(elmnt).style.visibility="visible";
+	document.getElementById(elmnt).style.visibility="visible";
 }
 function hidemenu(elmnt){
-document.getElementById(elmnt).style.visibility="hidden";
+	document.getElementById(elmnt).style.visibility="hidden";
 }
 </script>
 
-
+<!-- Pre-Load All Images -->
 <script type="text/javascript" src="js/load2.js"></script>
 
 </body>

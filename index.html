@@ -1,35 +1,41 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" >
+	
+<!--************************************************************************************************
+Thanks for viewing my source code! Hit me up if you have any questions or comments ksudac@gmail.com
+Last updated 3/13/2013
+*************************************************************************************************-->
 
 <head>
+
 <title>Karen Suda</title>
+	
 <link rel="stylesheet" type="text/css" href="css/karen_suda.css" />
 <link rel="shortcut icon" href="images/suda_icon.png" />
-
-
+	
 <meta name="description" content="Karen Suda Portfolio" />
 <meta name="keywords" content="karen, suda, cederquist, web, developer, designer, engineer, job, ui, ux, tech, php, sql, css, html, junior, javascript, java" />
 <meta name="author" content="Karen Suda-Cederquist" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
+	
 <style type="text/css">
 body, html{
-    background-image:url('images/black_pattern.png');
-    background-color: black;
-    background-repeat: repeat;
-    height: 100%;
-    z-index: 2;
+	background-image:url('images/black_pattern.png');
+	background-color: black;
+	background-repeat: repeat;
+	height: 100%;
+	z-index: 2;
 }
 </style>
 
 </head>
+
 <body id="my_body">
      
-<!-- Banner using Nav -->
+<!-- Top Color Box Navgation -->
 	<div class="navigation" style="position:relative; top:257px;color:transparent;">
-		<a class="transition1 c_green" style="color:#385859; padding: 180px 30px 17px 30px; line-height: 0px;" href="index4.html"> home </a>
+		<a class="transition1 c_green" style="color:#385859; padding: 180px 30px 17px 30px; line-height: 0px;" href="index.html"> home </a>
 		<a class="transition2 c_bright_teal" style="color:#6BAAB1; padding: 180px 30px 17px 30px; line-height: 0px;" href="pg_about.html"> about me </a>
 		<a class="transition3 c_rose" style="color:#9D4966; padding: 180px 30px 17px 30px; line-height: 0px;" href="pg_portfolio.html"> portfolio </a>
 		<a class="transition4 c_yellow" style="color:#E7C950; padding: 180px 30px 17px 30px; line-height: 0px;" href="pg_projects.html"> projects </a>
@@ -41,48 +47,46 @@ body, html{
 		<p> Front-End Web Developer. Engineer. UI/UX Designer. Tech Savvy. Quality.</p>
 	</div>
   
-<!-- Navigation -->
+<!-- Bottom Color Box Navigation -->
 	<div class="navigation" style="position:relative; top:430px;">
-		<a class="transition1 c_green" style="padding: 180px 30px 17px 30px;" href="index4.html"> home </a>
+		<a class="transition1 c_green" style="padding: 180px 30px 17px 30px;" href="index.html"> home </a>
 		<a class="transition2 c_bright_teal" style="padding: 180px 30px 17px 30px;" href="pg_about.html"> about me </a>
 		<a class="transition3 c_rose" style="padding: 180px 30px 17px 30px;" href="pg_portfolio.html"> portfolio </a>
 		<a class="transition4 c_yellow" style="padding: 180px 30px 17px 30px;" href="pg_projects.html"> projects </a>
 		<a class="transition5 c_bright_orange" style="padding: 180px 30px 17px 30px;" href="pg_contact.html"> contact </a>
 	</div>
 	
-<!-- name: Karen Suda-->
+<!-- Name: Karen Suda-->
 	<div id="home_name" style="position:relative; top:-100px; left:-420px;">
 		<p>Karen Suda</p>
 	</div>
 
-<!-- Multicolored top -->
+<!-- Multicolored top to move in -->
 	<div class="rainbow_bar" style="position:relative; top:-460px; left:-8px; height: 13px;"></div>	
 
-<!-- Logo -->	
+<!-- Logo to move in-->	
 	<div class="logo" style="position:relative; top:-510px; left:62px; z-index:12;"><img src="images/Karen_logo.png" alt="logo" /></div>
 
-<!-- Navigation -->
-		<div class="move_nav" style="position:relative; top:-540px; right:-139px; z-index:12;">
-			<div class="navigation">
-				<a style="padding: 17px 30px 17px 30px;" href="pg_about.html"> about me </a>
-				<a style="padding: 17px 30px 17px 30px;" href="pg_portfolio.html"> portfolio </a>
-				<a style="padding: 17px 30px 17px 30px;" href="pg_projects2.html"> projects </a>
-				<a style="padding: 17px 30px 17px 30px; margin-left: -5px;" href="pg_contact.html"> contact </a>
-			</div>
-</div>
+<!-- Navigation to move in -->
+	<div class="move_nav" style="position:relative; top:-540px; right:-139px; z-index:12;">
+		<div class="navigation">
+			<a style="padding: 17px 30px 17px 30px;" href="pg_about.html"> about me </a>
+			<a style="padding: 17px 30px 17px 30px;" href="pg_portfolio.html"> portfolio </a>
+			<a style="padding: 17px 30px 17px 30px;" href="pg_projects.html"> projects </a>
+			<a style="padding: 17px 30px 17px 30px; margin-left: -5px;" href="pg_contact.html"> contact </a>
+		</div>
+	</div>
 	
-<!-- White Background -->
+<!-- White Background to move in-->
 	<div class="new_background" style="position:relative; top:800px; left:-20px;"></div>
-
 
 	
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<!-- Animation with Link to Pages -->
 <script type="text/javascript"> 
-
-
 $(document).ready(function(){
-
-if(/chrome/.test(navigator.userAgent.toLowerCase())){
+  if(/chrome/.test(navigator.userAgent.toLowerCase())){
 	$(".transition1").click(function(event){
 		event.preventDefault();
 		$("#home_name").remove();
@@ -139,9 +143,8 @@ if(/chrome/.test(navigator.userAgent.toLowerCase())){
 		$(".navigation a").animate({paddingTop:"-=263px"},600);
 		setTimeout("redirectPage(5)", 1500);
 	});
-}
-	
-else { 
+  }
+  else { 
 	$(".transition1").click(function(event){
 		event.preventDefault();
 		$("#home_name").remove();
@@ -198,37 +201,33 @@ else {
 		$(".navigation a").animate({paddingTop:"-=263px"},600);
 		setTimeout("redirectPage(5)", 1500);
 	});
+  }
+});
+
+function redirectPage(numSelected) {
+	switch (numSelected) {
+	case 1:
+		window.location.href = "index.html";
+		break;
+	case 2:
+		window.location.href = "pg_about.html";
+		break;
+	case 3:
+		window.location.href = "pg_portfolio.html";
+		break;
+	case 4:
+		window.location.href = "pg_projects.html";
+		break;
+	case 5:
+		window.location.href = "pg_contact.html";
+		break;
+	default:
+		window.location.href = "index.html";
+	}
 }
-
-
-	});
-
-	function redirectPage(numSelected) {
-		switch (numSelected) {
-		case 1:
-			window.location.href = "index.html";
-			break;
-		case 2:
-			window.location.href = "pg_about.html";
-			break;
-		case 3:
-			window.location.href = "pg_portfolio.html";
-			break;
-		case 4:
-			window.location.href = "pg_projects.html";
-			break;
-		case 5:
-			window.location.href = "pg_contact.html";
-			break;
-		default:
-			window.location.href = "index.html";
-		}
-
-}
-
 </script>
-	
 
+<!-- Pre-load first set of images -->	
 <script type="text/javascript" src="js/load.js"></script>
 	
 </body>
